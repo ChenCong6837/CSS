@@ -1,0 +1,7 @@
+参考自：https://www.jianshu.com/p/ea32f5114f79
+
+1. 盒子垂直水平居中
+
+1.1 盒子有固定的宽高
+    <1> {position:absolute; left:0; top:0; right:0; bottom:0; margin:auto;}
+    <2> {position:absolute; top:50%; left:50%; margin-top:高度一半; margin-left:宽度一半;}
