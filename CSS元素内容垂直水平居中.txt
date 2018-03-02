@@ -1,7 +1,6 @@
 参考自：https://www.jianshu.com/p/ea32f5114f79
 
 1. 盒子垂直水平居中
-
 1.1 盒子有固定的宽高
     <1> {position:absolute; left:0; top:0; right:0; bottom:0; margin:auto;}
     <2> {position:absolute; top:50%; left:50%; margin-top:高度一半; margin-left:宽度一半;}
@@ -15,7 +14,16 @@
         }
 
 2. 图片水平垂直居中
-
     <1> 如果图片的宽度小于父元素的宽度,那么可以使用text-align: center;来居中图片
     <2> 如果图片的宽度大于父元素的宽度,但是图片的宽度是已知的,那么可以使用定位流left:50%; margin-left: -图片宽度的一半;
     <3> 如果图片的宽度大于父元素的宽度,但是不知道图片的宽度,那么可以使用给父元素添加text-align: center;给图片添加margin: 0 -100%;
+
+3. 文字水平垂直居中
+    <1> 单行垂直居中
+        如果一个容器中只有一行文字，对它实现居中相对比较简单，我们只需要设置它的实际高度height和所在行的高度line-height相等即可。
+    <2> 多行未知高度文字的垂直居中
+        如果一段内容，它的高度是可变的那么我们可以设定Padding，使上下的padding值相同即可。
+    <3> 多行文本固定高度的居中
+        CSS中的vertical-align属性只会对拥有valign特性的(X)HTML标签起作用，但是在CSS中还有一个display属性能够模拟，所以我们可以使用
+        这个属性来让div模拟table就可以使用vertical-align了。注意，display:table和display:table-cell的使用方法，前者必须设置在父元素上，
+        后者必须设置在子元素上，因此我们要为需要定位的文本再增加一个div元素。
