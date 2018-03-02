@@ -5,3 +5,11 @@
 1.1 盒子有固定的宽高
     <1> {position:absolute; left:0; top:0; right:0; bottom:0; margin:auto;}
     <2> {position:absolute; top:50%; left:50%; margin-top:高度一半; margin-left:宽度一半;}
+1.2 不清楚盒子宽高
+    <1> {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
+    <2> 在父元素中添加
+        {
+            display:-webkit-flex;
+            justify-content:center; /*子元素水平居中*/
+            align-items:center; /*子元素垂直居中*/
+        }
