@@ -1,0 +1,13 @@
+//让图文不可复制
+{
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    user-select:none;
+}
+
+//为尊重原创，让复制的文本加上一段来源说明
+    大体思路：
+        1. 答案区域监听copy事件，并阻止这个事件的默认行为。
+        2. 获取选中的内容（window.getSelection()）加上版权信息，然后设置到剪切板（clipboarddate.setData()）。
