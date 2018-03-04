@@ -1,0 +1,7 @@
+1. 单行文本溢出显示
+    {
+        overflow：hidden;
+        text-overflow：ellipsis;
+        white-space:nowrap;
+        //当然还需要加宽度width属性来兼容部分浏览
+    }
