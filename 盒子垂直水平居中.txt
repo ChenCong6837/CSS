@@ -18,3 +18,14 @@
         {
             margin:0 auto;
         }
+
+3. 定位+transform;适用于子盒子宽高不定时：
+    {
+        position:relative/absolute;
+        /* top和left偏移各自为50% */
+        top:50%;
+        left:50%;
+        /* translate(-50%, -50%) 偏移自身的宽和高的-50% */
+        translate: transform(-50%, -50%);
+        /* 注意:这里会启动3D硬件加速，会增加耗电量*/
+    }
