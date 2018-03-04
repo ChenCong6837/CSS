@@ -29,3 +29,12 @@
         translate: transform(-50%, -50%);
         /* 注意:这里会启动3D硬件加速，会增加耗电量*/
     }
+
+4. flex布局：
+    父级：
+        {
+            display: flex; /* flex布局 */ 
+            align-items: center; /* 实现垂直居中 */
+            justify-content:center; /* 实现水平居中 */
+        }
+        
