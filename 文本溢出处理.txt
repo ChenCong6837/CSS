@@ -5,3 +5,12 @@
         white-space:nowrap;
         //当然还需要加宽度width属性来兼容部分浏览
     }
+
+2. 多行文本溢出显示
+    {
+        //适用范围：因使用了WebKit的CSS扩展属性，改方法适用于WebKit浏览器及移动端
+        display:-webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:3;
+        overflow:hidden;
+    }
